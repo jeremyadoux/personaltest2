@@ -31,5 +31,9 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Heroe": {
+    "dataSource": "db",
+    "public": true
   }
 }

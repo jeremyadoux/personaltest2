@@ -4,6 +4,8 @@ import { DashboardComponent }  from './dashboard.component';
 import { HeroesComponent }     from './heroes.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HeroService }         from './hero.service';
+import {LoginComponent}         from './login.component';
+
 @Component({
     selector: 'my-app',
     template: `
@@ -24,7 +26,8 @@ import { HeroService }         from './hero.service';
 @RouteConfig([
     { path: '/dashboard',  name: 'Dashboard',  component: DashboardComponent, useAsDefault: true },
     { path: '/detail/:id', name: 'HeroDetail', component: HeroDetailComponent },
-    { path: '/heroes',     name: 'Heroes',     component: HeroesComponent }
+    { path: '/heroes',     name: 'Heroes',     component: HeroesComponent },
+    { path: '/login',     name: 'Login',     component: LoginComponent }
 ])
 export class AppComponent {
     title = 'Tour of Heroes';
